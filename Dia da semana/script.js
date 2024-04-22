@@ -28,6 +28,9 @@ function clicar() {
     var Quinta = window.document.getElementById("Quinta")
     Quinta.style.display = "block"
     
+  } else if (diasem === 5) {
+    var Quinta = window.document.getElementById("Quinta")
+    Sexta.style.display = "block"
   }
 }
 
