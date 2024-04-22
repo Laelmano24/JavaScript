@@ -21,6 +21,7 @@ body {
     background-color: white;
     padding: 10px;
     margin: auto;
+    box-shadow: 10px 10px 10px #0C313E;
     border-radius: 10px 10px 0px 0px;
     max-width: 800px;
     min-width: 300px;
@@ -86,7 +87,8 @@ body {
     display: none;
   }
   footer {
-    background-color: #135066;
+    background-image: linear-gradient(to left, #135066, #0EA2D7);
+    box-shadow: 10px 10px 10px #0C313E;
     padding: 2px;
     margin: 0px;
     max-width: 898px;
