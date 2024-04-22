@@ -1,15 +1,25 @@
 @charset "UTF_8";
 
+
+
 body {
+  height: 100vh;
+  position: relative;
     background-image: linear-gradient(to right, #0E9BCF, #064359);
     font-family: "Poppins", sans-serif;
     
   }
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   main {
     background-color: white;
     padding: 10px;
-    border-radius: 10px 10px 0px 0px;
     margin: auto;
+    border-radius: 10px 10px 0px 0px;
     max-width: 800px;
     min-width: 300px;
   }
