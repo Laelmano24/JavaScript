@@ -2,6 +2,8 @@
 
 
 
+
+
 body {
   height: 100vh;
   position: relative;
@@ -78,6 +80,9 @@ body {
     display: none;
   }
   #Quinta {
+    display: none;
+  }
+  #Sexta {
     display: none;
   }
   footer {
