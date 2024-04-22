@@ -8,7 +8,7 @@ body {
   main {
     background-color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     margin: auto;
     max-width: 800px;
     min-width: 300px;
@@ -63,4 +63,23 @@ body {
   }
   #Sala11Terca {
     display: none;
+  }
+  footer {
+    background-color: #135066;
+    padding: 2px;
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  footer > p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+  }
+  footer > p > strong > a {
+    color: white;
+    text-decoration: none;
+  }
+  footer > p > strong > a:hover {
+    color: #c0c0c0;
+    text-decoration: underline;
   }
