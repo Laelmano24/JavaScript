@@ -1,14 +1,21 @@
 @charset "UTF_8";
 
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Encode+Sans+SC:wght@100..900&family=Galada&family=Galindo&family=Inter:wght@100..900&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1+Code:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Palanquin+Dark:wght@400;500;600;700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Telex&display=swap');
 
 
-
-
+:root {
+  --cor0: #92E2FF;
+  --cor1: #12BEFC;
+  --cor2: #0E9BCF;
+  --cor3: #064359;
+  --cor4: #0C313E;
+  --corbutton: #09CE82;
+}
 body {
   height: 100vh;
   position: relative;
-    background-image: linear-gradient(to right, #0E9BCF, #064359);
-    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    font-family: Arial, Helvetica, sans-serif;
     
   }
   div {
@@ -21,16 +28,17 @@ body {
     background-color: white;
     padding: 10px;
     margin: auto;
-    box-shadow: 10px 10px 10px #0C313E;
+    box-shadow: 10px 10px 10px var(--cor4);
     border-radius: 10px 10px 0px 0px;
     max-width: 800px;
     min-width: 300px;
   }
   main > h1 {
     text-align: center;
+    font-family: "Poppins", sans-serif;
   }
   article {
-    background-image: linear-gradient(160deg, #12BEFC, #064359);
+    background-image: linear-gradient(160deg, var(--cor1), var(--cor3));
     border-radius: 10px;
     padding: 10px;
   }
@@ -48,7 +56,7 @@ body {
     font-size: 16px;
   }
   .button {
-    background-color: #09CE82;
+    background-color: var(--corbutton);
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -65,7 +73,7 @@ body {
     
   }
   .sala11 > p {
-    background-color: #92E2FF;
+    background-color: var(--cor0);
     margin: 0px;
     border: 1px solid black;
     text-align: center;
@@ -87,8 +95,8 @@ body {
     display: none;
   }
   footer {
-    background-image: linear-gradient(to left, #135066, #0EA2D7);
-    box-shadow: 10px 10px 10px #0C313E;
+    background-image: linear-gradient(to left, var(--cor3), var(--cor2));
+    box-shadow: 10px 10px 10px var(--cor4);
     padding: 2px;
     margin: 0px;
     max-width: 898px;
@@ -103,9 +111,10 @@ body {
   }
   footer > p > strong > a {
     color: white;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
   }
   footer > p > strong > a:hover {
-    color: #c0c0c0;
+    color: #C0C0C0;
     text-decoration: underline;
   }
