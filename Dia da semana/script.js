@@ -9,26 +9,34 @@ var btn1 = window.document.getElementById("btn1")
 btn1.addEventListener("mousemove", btn1hoverent)
 btn1.addEventListener("mouseout", btn1hoverout)
 
-btn1.addEventListener("click", clicar);
+btn1.addEventListener("click", clicar)
 
 function clicar() {
   if (diasem === 1) {
     var Segunda = window.document.getElementById("Segunda");
-    Segunda.style.display = "block";
+    Segunda.style.display = "block"
+
   } else if (diasem === 2) {
     var Terca = window.document.getElementById("Terca")
     Terca.style.display = "block"
 
+  } else if (diasem === 3) {
+    var Quarta = window.document.getElementById("Quarta")
+    Quarta.style.display = "block"
 
+  } else if (diasem === 4) {
+    var Quinta = window.document.getElementById("Quinta")
+    Quinta.style.display = "block"
+    
   }
 }
 
 function btn1hoverent() {
-  btn1.style.backgroundColor = ("#06945D")
+  btn1.style.backgroundColor = "#06945D"
 }
 
 function btn1hoverout() {
-  btn1.style.backgroundColor = ("#09CE82")
+  btn1.style.backgroundColor = "#09CE82"
 }
 
 
