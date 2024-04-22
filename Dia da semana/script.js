@@ -6,25 +6,18 @@ var h2 = window.document.querySelector("article h2")
 
 var btn1 = window.document.getElementById("btn1")
 
-var btn2 = window.document.getElementById("btn2")
-
 btn1.addEventListener("mousemove", btn1hoverent)
 btn1.addEventListener("mouseout", btn1hoverout)
 
-btn2.addEventListener("mouseenter", btn2hoverent)
-btn2.addEventListener("mouseleave", btn2hoverout)
-
-
-
-btn2.addEventListener("click", clicar);
+btn1.addEventListener("click", clicar);
 
 function clicar() {
   if (diasem === 1) {
-    var Sala11Segunda = window.document.getElementById("Sala11Segunda");
-    Sala11Segunda.style.display = "block";
+    var Segunda = window.document.getElementById("Segunda");
+    Segunda.style.display = "block";
   } else if (diasem === 2) {
-    var Sala11Terca = window.document.getElementById("Sala11Terca")
-    Sala11Terca.style.display = "block"
+    var Terca = window.document.getElementById("Terca")
+    Terca.style.display = "block"
 
 
   }
@@ -38,13 +31,6 @@ function btn1hoverout() {
   btn1.style.backgroundColor = ("#09CE82")
 }
 
-function btn2hoverent() {
-  btn2.style.backgroundColor = ("#06945D")
-}
-
-function btn2hoverout() {
-  btn2.style.backgroundColor = ("#09CE82")
-}
 
 switch (diasem) {
   case 0:
