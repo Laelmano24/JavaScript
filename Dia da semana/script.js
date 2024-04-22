@@ -1,7 +1,20 @@
 var agora = new Date();
+
 var diasem = agora.getDay()
-var h2 = window.document.querySelector("article h2");
-var btn2 = window.document.getElementById("btn2");
+
+var h2 = window.document.querySelector("article h2")
+
+var btn1 = window.document.getElementById("btn1")
+
+var btn2 = window.document.getElementById("btn2")
+
+btn1.addEventListener("mousemove", btn1hoverent)
+btn1.addEventListener("mouseout", btn1hoverout)
+
+btn2.addEventListener("mouseenter", btn2hoverent)
+btn2.addEventListener("mouseleave", btn2hoverout)
+
+
 
 btn2.addEventListener("click", clicar);
 
@@ -15,6 +28,22 @@ function clicar() {
 
 
   }
+}
+
+function btn1hoverent() {
+  btn1.style.backgroundColor = ("#06945D")
+}
+
+function btn1hoverout() {
+  btn1.style.backgroundColor = ("#09CE82")
+}
+
+function btn2hoverent() {
+  btn2.style.backgroundColor = ("#06945D")
+}
+
+function btn2hoverout() {
+  btn2.style.backgroundColor = ("#09CE82")
 }
 
 switch (diasem) {
