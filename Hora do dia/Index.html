@@ -10,7 +10,7 @@
   
   
     body {
-      background-color: red;
+      background-color: #82EDFF;
       font-family: Arial, Helvetica, sans-serif;
     }
     main {
@@ -51,7 +51,7 @@
       font-weight: bold;
     }
     main > #img {
-      display: none;
+      display: block;
       margin: auto;
       border-radius: 50%;
     }
@@ -61,8 +61,6 @@
   <main>
     <h1>Hora do dia</h1>
     <img src="manha.png" id="img" alt="foto de uma manha">
-    <img src="tarde.png" id="img" alt="foto de uma manha">
-    <img src="noite.png" id="img" alt="foto de uma manha">
     
     <p>Agora são <span id="horas">00</span></p>
   </main>
@@ -74,19 +72,19 @@
     var hora = agora.getHours()
     var image = window.document.getElementById("img")
     var spantext = window.document.getElementById("horas")
-    if (hora >= 5 && hora < 12 ){
-      img.style.display = ("block")
+if (hora >= 5 && hora < 12) {
       spantext.textContent = hora + " da manhã"
-      
-    }else if (hora >= 12 && hora < 18){
-      img.style.display = ("block")
-      spantext.textContent = hora + " da tarde"
-    }
-    else if (hora >= 18 && hora < 23){
-      img.style.display = ("block")
-      spantext.textContent = hora + " da noite"
-    }
-    else {
+    } else if (hora >= 12 && hora < 18) {
+      image.src = "tarde.png"
+      document.body.style.backgroundColor = "#FFE482"
+      spantext.textContent = hora + " da tarde";
+    } else if (hora >= 18 && hora < 23) {
+      image.src = "noite.png"
+      document.body.style.backgroundColor = "#829AFF"
+      spantext.textContent = hora + " da noite";
+    } else {
+      image.src = "noite.png"
+      document.body.style.backgroundColor = "#829AFF"
       spantext.textContent = hora + " da madrugada"
     }
   </script>
