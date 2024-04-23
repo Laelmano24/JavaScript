@@ -69,11 +69,14 @@
   </footer>
   <script>
     var agora = new Date()
-    var hora = agora.getHours()
+    var hora = 14
     var image = window.document.getElementById("img")
     var spantext = window.document.getElementById("horas")
     if (hora >= 5 && hora < 12 ){
+      img.style.src = ("manha.png")
       
+    }else if (hora >= 12 && hora < 18){
+      img.style.src = ("tarde.png")
     }
   </script>
 </body>
