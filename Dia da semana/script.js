@@ -35,11 +35,11 @@ function clicar() {
 }
 
 function btn1hoverent() {
-  btn1.style.backgroundColor = "#06945D"
+  btn1.style.backgroundColor = "#119167"
 }
 
 function btn1hoverout() {
-  btn1.style.backgroundColor = "#09CE82"
+  btn1.style.backgroundColor = "#1BDE9C"
 }
 
 
