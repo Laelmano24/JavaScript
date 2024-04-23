@@ -1,6 +1,6 @@
 var agora = new Date();
 
-var diasem = agora.getDay()
+var diasem = agora.getDay();
 
 var h2 = window.document.querySelector("article h2")
 
