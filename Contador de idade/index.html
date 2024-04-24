@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contador de idade.</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <h1>Contador de idade</h1>
+    <div class="dados">
+      <p>Ano que você nasceu</p>
+      <input type="number" name="anodata" id="anodata">
+    </div>
+    
+    <div class="dados">
+      <p>sexo</p>
+      <input type="radio" name="sexo" id="sexo-m" checked>
+    
+     <label for="sexo-m">Masculino</label>
+    
+      <input type="radio" name="sexo" id="sexo-f">
+    
+      <label for="sexo-f">Feminino</label>
+    
+    </div>
+    
+    <input type="button" value="Verificar" class="btn" onclick="clicar()">
+    <div class="resultado">
+      <p>Preencha os dados acima para ter algum resultado.</p>
+      <img src="" alt="" id="foto">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
