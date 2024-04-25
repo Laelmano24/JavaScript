@@ -13,14 +13,51 @@
             --cor4: #6E8B03;
             --cor5: #536902;
         }
+        body {
+            height: 100vh;
+            background-image: linear-gradient(120deg, var(--cor2), var(--cor4));
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 70%;
+            height: 70%;
+        }
+        main > h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <main>
-
+        <h1>Contador</h1>
+        <h2>Inicio</h2>
+        <input type="number" name="txt1" id="txt1">
+        <h2>Fim</h2>
+        <input type="number" name="txt2" id="txt2">
+        <h2>Passo</h2>
+        <input type="number" name="txt3" id="txt3">
+        </br>
+        <input type="button" value="Verificar" onclick="clicar()">
+        <h3 id="resultado"></h3>
     </main>
     <script>
-        
+        var inicio = document.getElementById("txt1")
+        var fim = document.getElementById("txt2")
+        var passo = document.getElementById("txt3")
+        var res = document.getElementById("resultado")
+
+        function clicar() {
+            while ()
+        }
+
+
     </script>
 </body>
 </html>
