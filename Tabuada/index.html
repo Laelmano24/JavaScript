@@ -41,6 +41,10 @@
             color: white;
 
         }
+        main > h3 {
+          text-align: center;
+          color: white;
+        }
         main > input {
             display: block;
             margin: auto;
@@ -75,15 +79,19 @@
     </main>
     
     <script>
-        var input = Number(document.getElementById("txt1").value)
         var button = document.getElementById("btn")
-        var num1 = 0
-        var total = 10
         var res = document.getElementById("resultado")
         
         function clicar() {
-            while (num1 < total)
-            res.innerHTML += (`1 x ${input}`)
+          var input = Number(document.getElementById("txt1").value)
+          var num1 = 0
+          var total = 10
+          
+          while (num1 <= total) {
+            res.innerHTML += (`${input} x ${num1} = ${input * num1}<br>`)
+            num1++
+             
+            }
 
             
         }
