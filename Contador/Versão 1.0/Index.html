@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        :root {
+            --cor0: #C6FA04;
+            --cor1: #BFF205;
+            --cor2: #A3CF04;
+            --cor3: #89AD03;
+            --cor4: #6E8B03;
+            --cor5: #536902;
+        }
+        body {
+            background-image: linear-gradient(to right, var(--cor2), var(--cor4));
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        main {
+            background-color: white;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+          
+        }
+        main > h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contador</h1>
+        <h2>Inicio</h2>
+        <input type="number" name="txt1" id="txt1">
+        <h2>Fim</h2>
+        <input type="number" name="txt2" id="txt2">
+        <h2>Passo</h2>
+        <input type="number" name="txt3" id="txt3">
+        </br>
+        <input type="button" value="Verificar" onclick="clicar()">
+        <h3 id="resultado">Dgite valores pra realizar o contador</h3>
+    </main>
+    <script>
+        function clicar(){
+          var inicio = Number(document.getElementById("txt1").value)
+          var fim = Number(document.getElementById("txt2").value)
+          var passo = Number(document.getElementById("txt3").value)
+          var res = document.getElementById("resultado")
+         
+          res.innerHTML = ""
+          
+          
+          if (inicio >= fim) {
+            window.alert("O início e maior que fim. Não pode isso.")
+            res.innerHTML += (`Dgite valores pra realizar o contador`)
+          }
+          
+          else {
+            while (inicio < fim) {
+            
+            res.innerHTML += (`Numeros: ${inicio}<br>`)
+            
+            inicio += passo
+            
+            res.innerHTML += (`Numeros: ${inicio}<br>`)
+          }
+          }
+          
+
+        }
+    </script>
+</body>
+</html>
