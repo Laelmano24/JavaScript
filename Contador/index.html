@@ -50,13 +50,26 @@
           var fim = Number(document.getElementById("txt2").value)
           var passo = Number(document.getElementById("txt3").value)
           var res = document.getElementById("resultado")
+         
           res.innerHTML = ""
           
           
           if (inicio >= fim) {
             window.alert("O início e maior que fim. Não pode isso.")
+            res.innerHTML += (`Dgite valores pra realizar o contador`)
           }
-          e
+          
+          else {
+            while (inicio < fim) {
+            
+            res.innerHTML += (`Numeros: ${inicio}<br>`)
+            
+            inicio += passo
+            
+            res.innerHTML += (`Numeros: ${inicio}<br>`)
+          }
+          }
+          
 
         }
     </script>
