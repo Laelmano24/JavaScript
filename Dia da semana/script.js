@@ -1,10 +1,12 @@
 var agora = new Date();
 
-var diasem = agora.getDay();
+var diasem = agora.getDay()
 
 var h2 = window.document.querySelector("article h2")
 
 var btn1 = window.document.getElementById("btn1")
+
+var res = document.getElementById("resultado")
 
 btn1.addEventListener("mousemove", btn1hoverent)
 btn1.addEventListener("mouseout", btn1hoverout)
@@ -31,7 +33,10 @@ function clicar() {
   } else if (diasem === 5) {
     var Quinta = window.document.getElementById("Quinta")
     Sexta.style.display = "block"
-  }
+  } else {
+    res.style.display = ("block")
+    res.innerHTML = ("Não tem aula hoje, cidadão.")
+  }  
 }
 
 function btn1hoverent() {
