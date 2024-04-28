@@ -2,127 +2,285 @@
 
 
 
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Candal&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Encode+Sans+SC:wght@100..900&family=Galada&family=Galindo&family=Inter:wght@100..900&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1+Code:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Palanquin+Dark:wght@400;500;600;700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Telex&display=swap');
 
 
+
+
+
 :root {
+
   --cor0: #80E3D9;
+
   --cor1: #1BDECC;
+
   --cor2: #16BAAA;
+
   --cor3: #0D695F;
+
   --cor4: #08403A;
+
   --corbutton: #1BDE9C;
+
   --cor0oposto: #80E3A4;
+
 }
+
 body {
+
   height: 100vh;
+
   position: relative;
+
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+
     font-family: Arial, Helvetica, sans-serif;
+
     
+
   }
+
   div {
+
     position: absolute;
+
     top: 50%;
+
     left: 50%;
+
     transform: translate(-50%, -50%);
+
   }
+
   main {
+
     background-color: white;
+
     padding: 10px;
+
     margin: auto;
+
     box-shadow: 10px 10px 10px var(--cor4);
+
     border-radius: 10px 10px 0px 0px;
+
     max-width: 800px;
+
     min-width: 300px;
+
   }
+
   main > h1 {
+
     text-align: center;
+
     font-family: "Poppins", sans-serif;
+
   }
+
   article {
+
     background-image: linear-gradient(160deg, var(--cor1), var(--cor3));
+
     border-radius: 10px;
+
     padding: 10px;
+
   }
+
   article > h2 {
+
     color: white;
+
     text-align: center;
+
     font-size: 22px;
+
   }
+
   article > h3 {
+
     color: white;
+
     font-size: 18px;
+
   }
+
   article > h4 {
+
     color: white;
+
     font-size: 16px;
+
   }
+
   .button {
+
     background-color: var(--corbutton);
+
     color: white;
+
     font-family: "Poppins", sans-serif;
+
     font-weight: bold;
+
     padding: 5px 10px;
+
     border-radius: 5px;
+
     border: none;
+
   }
+
   .horario > h2{
+
     color: white;
+
     font-size: 16px;
+
     
+
   }
-  .horario > p {
+
+  table {
+
+    border-collapse: collapse;
+
+  }
+
+  caption {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-align: left;
+
+    padding: 10px 0px;
+
+    font-size: 16px
+
+  }
+
+  td {
+
     background-color: var(--cor0);
-    margin: 0px;
+
+    width: 300px;
+
     border: 1px solid black;
+
     text-align: center;
+
     font-size: 14px;
+
+    padding: 1px 0px;
+
   }
+
   .espacamento {
+
     background-color: var(--cor0oposto);
-    margin: 0px;
+
+    width: 300px;
+
     border: 1px solid black;
+
     text-align: center;
+
     font-size: 14px;
+
+    padding: 0px 0px;
+
   }
+
   #Segunda {
+
     display: none;
+
   }
+
   #Terca {
+
     display: none;
+
   }
+
   #Quarta {
+
     display: none;
+
   }
+
   #Quinta {
+
     display: none;
+
   }
+
   #Sexta {
+
     display: none;
+
   }
+
+  #resultado {
+
+    display: none;
+
+  }
+
   footer {
+
     background-image: linear-gradient(to left, var(--cor3), var(--cor2));
+
     box-shadow: 10px 10px 10px var(--cor4);
+
     padding: 2px;
+
     margin: 0px;
+
     max-width: 898px;
+
     min-width: 300px;
+
     margin: auto;
+
     border-radius: 0px 0px 10px 10px;
+
   }
+
   footer > p {
+
     color: white;
+
     text-align: center;
+
     font-weight: 400;
+
   }
+
   footer > p > strong > a {
+
     color: white;
+
     font-family: "Poppins", sans-serif;
+
     text-decoration: none;
+
   }
+
   footer > p > strong > a:hover {
+
     color: #C0C0C0;
+
     text-decoration: underline;
+
   
+
 }
+
