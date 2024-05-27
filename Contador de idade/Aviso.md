@@ -1,0 +1,1 @@
+Esse coisa tá cheia de bugs

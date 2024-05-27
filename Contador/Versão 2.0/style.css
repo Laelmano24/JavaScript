@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
 
 body {
+  
   max-height: 500vh;
   min-height: 140vh;
   background-image: url("background-image.jpeg");
