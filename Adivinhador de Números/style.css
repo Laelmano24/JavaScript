@@ -167,3 +167,12 @@ body {
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .container-interface {
+    
+    height: 300px;
+    width: 300px;
+    
+  }
+}
