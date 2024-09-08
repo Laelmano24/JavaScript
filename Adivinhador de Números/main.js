@@ -66,7 +66,7 @@ Button_acertar.addEventListener("click", () => {
     if (inpt_value === NumAleatorio) {
       TextRes.textContent = `Você acertou, o número era ${NumAleatorio}`
     } else if (inpt_value > NumAleatorio) {
-      TextRes.textContent = `O número é menormenor que ${inpt_value}`
+      TextRes.textContent = `O número é menor que ${inpt_value}`
     } else if (inpt_value < NumAleatorio) {
       TextRes.textContent = `O número é maior que ${inpt_value}`
     }
