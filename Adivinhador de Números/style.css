@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100dvh;
+  width: 100dvw;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-interface {
+  display: flex;
+  background-color: #131313;
+  box-shadow: 0px 0px 30px #000000B5;
+  height: 30vh;
+  width: 70vw;
+  flex-direction: column;
+  
+  animation-duration: 2s;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+.container-interface > h1 {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.container-interface > span {
+  color: #fff;
+  animation-name: Aparecer;
+  animation-duration: 1s;
+  align-self: center;
+  font-weight: 680;
+}
+.container-valor-min{
+  display: flex;
+  background: #202020;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-valor-min > input {
+  background: #595959;
+  color: #00CF73;
+  font-weight: 656;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+.container-valor-min > input::placeholder {
+  color: #fff;
+  font-weight: 578;
+}
+
+.container-valor-min > button {
+  background: linear-gradient(120deg, #00A65C, #00B765);
+  color: #fff;
+  align-self: center;
+  width: calc(100vh - 90vh);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 578;
+  border: none;
+}
+
+.container-valor-max {
+  display: none;
+  background: #202020;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-valor-max > input {
+  background: #595959;
+  color: #00CF73;
+  font-weight: 656;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+.container-valor-max > input::placeholder {
+  color: #fff;
+  font-weight: 578;
+}
+
+.container-valor-max > button {
+  background: linear-gradient(120deg, #00A65C, #00B765);
+  color: #fff;
+  align-self: center;
+  width: calc(100vh - 90vh);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 578;
+  border: none;
+}
+
+.container-acertar-valor {
+  display: none;
+  background: #202020;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-acertar-valor > input {
+  background: #595959;
+  color: #00CF73;
+  font-weight: 656;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+.container-acertar-valor > input::placeholder {
+  color: #fff;
+  font-weight: 578;
+}
+
+.container-acertar-valor > button {
+  background: linear-gradient(120deg, #00A65C, #00B765);
+  color: #fff;
+  align-self: center;
+  width: calc(100vh - 90vh);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 578;
+  border: none;
+}
+
+@keyframes AnimationEntrando {
+  from {
+    transform: translate(-5000px, 0px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes AnimationSaido {
+  from {
+    transform: translate(-0px, 0px);
+  }
+  to {
+    transform: translate(5000px, 0px);
+  }
+  
+}
+
+@keyframes Aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
