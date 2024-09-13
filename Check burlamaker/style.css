@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgba(14, 14, 14, 1);
+}
+
+.Interface-init, .container-main {
+  display: flex;
+  background: rgba(12, 12, 12, 1);
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 0px;
+  flex-direction: column;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+}
+
+.Interface-init > h1, .container-main > h2 {
+  color: #fff;
+
+  text-shadow: 0px 0px 20px #FFFFFFA8;
+}
+
+.Interface-init > button {
+  display: flex;
+  background: #09AAA5;
+  color: #fff;
+  font-weight: 800;
+  transition:  0.5s;
+  padding: 10px 30px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.Interface-init > button:hover {
+  box-shadow: 0px 0px 10px #0AB0AB;
+}
+
+.container-main {
+  display: none;
+}
+
+.container-main > img {
+  display: block;
+  opacity: 0;
+  width: 200px;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
